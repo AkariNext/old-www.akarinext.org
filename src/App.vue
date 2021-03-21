@@ -1,8 +1,5 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
+  <Header/>
   <router-view />
 </template>
 
@@ -15,3 +12,15 @@
   color #2c3e50
   margin-top 60px
 </style>
+
+<script>
+// @ is an alias to /src
+import Header from "./components/Header.vue";
+
+export default {
+  name: "Home",
+  components: {
+    Header,
+  },
+};
+</script>
